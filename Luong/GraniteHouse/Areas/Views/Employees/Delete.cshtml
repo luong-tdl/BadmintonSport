@@ -1,0 +1,68 @@
+﻿@model GraniteHouse.Models.ViewModel.EmployeeViewModel
+@using GraniteHouse.Extensions
+
+
+<br />
+<h2 class="text-info">Delete employee</h2>
+
+<form method="post">
+    <div class="p-4 border rounded row">
+        <input hidden asp-for="Employee.Id" />
+        <div class="col-8">
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Employee.Name"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Employee.Name" readonly class="form-control" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Employee.BirthData"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Employee.BirthData" readonly class="form-control" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Employee.PhoneNumber"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Employee.PhoneNumber" readonly class="form-control" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Employee.Address"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Employee.Address" readonly class="form-control" />
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="PositionEmployees"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Employee.PositionEmployee.Name" readonly class="form-control" />
+                </div>
+            </div>
+
+        </div>
+
+
+        <br />
+        <div class="form-group">
+            <input type="submit" class="btn btn-danger" value="Delete" />
+            <a asp-action="Index" class="btn btn-success">Back to List</a>
+        </div>
+    </div>
+</form>
+
+@section Scripts{
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
