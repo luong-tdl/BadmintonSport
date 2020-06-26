@@ -1,0 +1,82 @@
+﻿@model GraniteHouse.Models.ViewModel.EmployeeViewModel
+@using GraniteHouse.Extensions
+
+
+
+<br />
+<h2 class="text-info">Create Employee</h2>
+
+<form method="post" enctype="multipart/form-data">
+    <div class="p-4 border rounded">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="Employee.Name"></label>
+            </div>
+            <div class="col-5">
+                <input asp-for="Employee.Name" class="form-control" />
+            </div>
+            <span asp-validation-for="Employee.Name" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="Employee.BirthData" class="col-form-label"></label>
+            </div>
+            <div class="col-5">
+                <input asp-for="Employee.BirthData" value="" type="text" id="datepicker" class="form-control" />
+
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="Employee.PhoneNumber"></label>
+            </div>
+            <div class="col-5">
+                <input asp-for="Employee.PhoneNumber" class="form-control" />
+            </div>
+            <span asp-validation-for="Employee.PhoneNumber" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="Employee.Address"></label>
+            </div>
+            <div class="col-5">
+                <input asp-for="Employee.Address" class="form-control" />
+            </div>
+            <span asp-validation-for="Employee.Address" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="PositionEmployees"></label>
+            </div>
+            <div class="col-5">
+                <select asp-for="@Model.Employee.VitriEmployeeId" asp-items="Model.PositionEmployees.ToSelectListItem(Model.Employee.VitriEmployeeId)" class="form-control"></select>
+            </div>
+        </div>
+        <br />
+        <div class="form-group">
+            <input asp-controller="Home" asp-action="Index" asp-area="Customer" type="submit" class="btn btn-primary" value="Create" />
+        </div>
+    </div>
+</form>
+
+@section Scripts{
+    <script>
+    $('.timepicker').timepicker({
+            timeFormat: 'h:mm p',
+            interval: 30,
+            minTime: '10',
+            maxTime: '3:00pm',
+            startTime: '10:00',
+            dynamic: true,
+            dropdown: true,
+            scrollbar: true
+        });
+
+        $(function () {
+            $("#datepicker").datepicker({
+                minDate: +1, maxDate: "+3M"
+            });
+        });</script>
+}
+
