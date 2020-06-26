@@ -11,7 +11,6 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-GraniteHouse-CB92FC37-73A7-4D7D-99CC-9F82A174BF7A")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("GraniteHouse")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

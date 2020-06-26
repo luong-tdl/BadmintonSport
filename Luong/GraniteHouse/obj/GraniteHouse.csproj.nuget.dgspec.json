@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TMDT\\BadmintonSport\\GraniteHouse\\GraniteHouse.csproj": {}
+    "D:\\TMDT\\BadmintonSport\\Luong\\GraniteHouse\\GraniteHouse.csproj": {}
   },
   "projects": {
-    "D:\\TMDT\\BadmintonSport\\GraniteHouse\\GraniteHouse.csproj": {
+    "D:\\TMDT\\BadmintonSport\\Luong\\GraniteHouse\\GraniteHouse.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TMDT\\BadmintonSport\\GraniteHouse\\GraniteHouse.csproj",
+        "projectUniqueName": "D:\\TMDT\\BadmintonSport\\Luong\\GraniteHouse\\GraniteHouse.csproj",
         "projectName": "GraniteHouse",
-        "projectPath": "D:\\TMDT\\BadmintonSport\\GraniteHouse\\GraniteHouse.csproj",
+        "projectPath": "D:\\TMDT\\BadmintonSport\\Luong\\GraniteHouse\\GraniteHouse.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\TMDT\\BadmintonSport\\GraniteHouse\\obj\\",
+        "outputPath": "D:\\TMDT\\BadmintonSport\\Luong\\GraniteHouse\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
